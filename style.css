@@ -1,0 +1,500 @@
+body {
+    width: 100%; /* Adjust overall grid container width */
+    height: 100%; /* Adjust overall grid container height */
+    background-color: rgb(15, 15, 15); /* Base color */
+    background-image: linear-gradient(transparent 99.5%, rgb(54, 54, 54) 3%), /* Horizontal lines */
+                      linear-gradient(90deg, transparent 99.5%, rgb(54, 54, 54) 3%); /* Vertical lines */
+    background-size: 190px 190px; /* Increase the size of each grid cell */
+    position: relative; /* For border overlay */
+}
+
+/* Navbar */
+.navbar{
+    position: relative;
+}
+.navbar-brand{
+    letter-spacing: 10px;
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 5%;
+    font-family: "Rubik Vinyl", serif;
+    
+
+}
+.navbar-nav{
+    position: absolute;
+    right: 10%;
+    color: rgb(122, 121, 121);
+    font-size: small;
+    font-weight: 500;
+}
+.navbar-nav .nav-item{
+    margin-left: 20px;
+    letter-spacing: 1px;
+}
+.navbar-nav .nav-item:hover{
+    border-bottom: 2px solid rgb(12, 12, 83);
+}
+/* Home */
+#home{
+    height: 100vh !important;
+    position: relative;
+}
+.fullhome{
+    padding-top: 85px;
+}
+#home .left,#home .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.leftcontent{
+    margin-bottom: 30px;
+    text-align: left;
+}
+.rightcontent{
+    margin-bottom: 30px;
+    text-align: right;
+}
+#home .left .leftcontent h5,#home .right .rightcontent h5{
+    color: white;
+    font-size: medium;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+#home .left .leftcontent h6,#home .right .rightcontent h6{
+    font-size: smaller;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.leftcontent,.rightcontent{
+    color: rgb(145, 142, 142);
+}
+
+.middle{
+    position: relative;
+    text-align: center;
+}
+.middle img{
+    position: relative;
+    width: 60%;
+    border-radius: 400px;
+    height: 95%;
+    border: 20px solid rgb(31, 30, 30);
+}
+.middle h1{
+    position: absolute;
+    color: white;
+    left: 10%;
+    bottom: 0%;
+    right: 0;
+    font-size: 110px;
+    font-weight: 400;
+    letter-spacing: 40px;
+    font-family: "Rubik Vinyl", serif;
+
+}
+.logos{
+    margin-top: 40px;
+    padding-top: 20px;
+}
+.logos i{
+    color: white;
+    background-color: rgb(31, 30, 30);
+    padding: 8px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+/* Skills */
+#skills{
+    margin-top: 100px;
+    padding-bottom: 50px;
+    background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+}
+.skillgroup{
+    /* float: left; */
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    /* box-shadow: 10px 10px 30px black; */
+}
+.skillitem{
+    /* float: left; */
+    text-align: center;
+    margin: 20px;
+
+}
+.skillitem .top{
+    width: 9rem;
+    height: 15rem;
+    background-color: rgb(3, 3, 3);
+    border-radius: 400px;
+    /* box-shadow: 1px 1px 10px  blue; */
+    box-shadow: 0 0 10px #7a00ff, 0 0 15px #7a00ff; 
+
+    text-align: center;
+    padding-top: 20%;
+}
+.skillitem .top svg{
+    width: 70%;
+    transition: transform 0.9s ease;
+    /* transform-origin: center; */
+    filter: grayscale(100%);
+}
+.skillitem .top svg:hover{
+    /* transform: rotate(360deg); */
+    transform: rotateY(360deg); 
+    filter: grayscale(0%);
+}
+.skillitem .top h6{
+    color: white;
+    margin-top: 20%;
+    font-weight: 800;
+}
+
+.skillitem .bottom h6{
+    color: rgb(145, 142, 142);
+    margin-top: 20px;
+}
+
+/* Experience */
+
+#experience{
+    background-color: rgb(29, 31, 43);
+    padding-bottom: 50px;
+    
+}
+
+#experience h1{
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 50px;
+}
+
+.expgroup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+}
+.expgroup .expitem{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    /* border: 2px solid; */
+    height: 12rem;
+    position: relative;
+}
+.expgroup .expitem .companylogo{
+    position: absolute;
+    top:80%;
+    width: 60%;
+    /* filter: grayscale(70%); */
+   
+}
+.expgroup .expitem .expleft h1{
+    font-weight: 900;
+    padding-top: 70px !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.expline img{
+    background-color: blue;
+    max-width: 2px;
+    height: 50px;
+}
+.expgroup .expitem .expright{
+    margin-left: 20px;
+}
+.expgroup .expitem .expleft{
+    margin-right: 20px;
+}
+.expgroup .expitem .expright h4{
+    font-weight: 800;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+.expgroup .expitem .expright h6{
+    font-weight: 800;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(145, 142, 142);
+
+}
+
+/* About */
+#about{
+    height: 100vh;
+}
+#about .left{
+    float: left;
+}
+#about .left h6{
+    float: left;
+    transform: rotate(-90deg);
+    text-align: center;
+    margin: auto;
+    color: white;
+    margin-top: 40%;
+
+}
+#about .left,#about .right{
+    text-align: center;
+}
+
+#about .left img{
+    float: left;
+    width: 60%;
+    height: 100%;
+    border-radius: 400px;
+    filter: grayscale(90%);
+    box-shadow: 
+        10px 10px 15px rgb(3, 12, 97), /* First shadow */
+        -10px -10px 15px rgb(3, 12, 97), /* Second shadow */
+        5px 5px 10px rgba(0, 5, 51, 0.945); /* Third shadow */
+}
+.aboutsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#about .right .top{
+    width: 14rem;
+    height: 14rem;
+    background-color: rgb(26, 25, 25);
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    box-shadow: 
+        8px 8px 15px rgb(3, 12, 97), /* First shadow */
+        -8px -8px 15px rgb(3, 12, 97), /* Second shadow */
+        5px 5px 10px rgba(0, 5, 51, 0.945);
+}
+#about .right .top h1{
+    /* position:absolute; */
+    /* top: 10%; */
+    /* left: 15%; */
+    margin-top: 10%;
+    font-size: 110px;
+    font-weight: 900;
+    color: wheat;
+    font-family: "Edu AU VIC WA NT Arrows", serif;
+    font-optical-sizing: auto;
+}
+#about .right .top h6{
+    /* position: absolute;
+    bottom: 15%; */
+    font-size: 12px;
+    color: rgb(145, 142, 142);
+
+}
+#about .right .bottom{
+    width: 17rem;
+    color: rgb(145, 142, 142);
+    margin-top: 10%;
+}
+#about .right .bottom h6{
+    font-size: 14px;
+    color: rgb(145, 142, 142);
+
+}
+
+/* Projects */
+#projects{
+    height: 100vh;
+}
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#projects h1{
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    font-size: 50px;
+}
+
+.projectgroup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.projectgroup .projectitem{
+    margin: 20px;
+}
+.projectgroup .projectitem img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 
+    10px 0 15px rgba(0, 0, 0, 0.5), /* Shift shadow to the right */
+    0 0 30px rgba(34, 34, 129, 0.7), /* Add glowing blue shadow */
+    0 0 60px rgba(23, 23, 134, 0.753);
+    transition: box-shadow 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+  
+.projectgroup .projectitem img:hover {
+    box-shadow: 
+      10px 0 15px rgba(0, 0, 0, 0.5), /* Shift shadow to the right */
+      0 0 30px rgba(0, 0, 255, 0.7), /* Add glowing blue shadow */
+      0 0 60px rgba(0, 0, 255, 0.5); /* Outer glow for depth */
+    transform: translateX(5px) scale(1.05); /* Combine horizontal movement and scaling */
+}
+.projectgroup .projectitem h5 {
+    color: white;
+    font-size: large;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.projectgroup .projectitem h6{
+    color: rgb(145, 142, 142);
+    font-size: small;
+}
+
+/* Freelance */
+#freelance{
+    background-color: rgb(29, 31, 43);
+    padding: 10%;
+    text-align: center;
+    color: white;
+}
+#freelance h5{
+    margin-bottom:21px;
+}
+#freelance h1{
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+.glowing-button {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #7a00ff; /* Violet outline */
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.4s ease, box-shadow 0.4s ease, color 0.4s ease;
+}
+  
+.glowing-button:hover {
+    background: #7a00ff; /* Violet fill on hover */
+    color: #fff; /* Keep text white */
+    box-shadow: 0 0 10px #7a00ff, 0 0 30px #7a00ff; /* Glowing effect */
+}
+
+
+/* Contact */
+#contact{
+    height: 100vh;
+    background-color: rgb(15, 15, 15);
+}
+
+#contact .contactleft{
+    /* width: 100%; */
+    height: inherit;
+
+    background-image: linear-gradient(transparent 99.5%, rgb(54, 54, 54) 3%), /* Horizontal lines */
+                      linear-gradient(90deg, transparent 99.5%, rgb(54, 54, 54) 3%); /* Vertical lines */
+    background-size: 100px 100px;
+    position: relative; /* For border overlay */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactleft h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    width: 20rem;
+}
+.contactleft .lineimage{
+    background-color: rgb(6, 6, 103);
+    height: 25%;
+    width: 2px;
+    margin-right: 20px;
+}
+.contactright{
+    padding-left: 30px;
+
+    padding-bottom: 6%;
+}
+.contactright h3{
+    color: white;
+    margin-top: 10%;
+    font-weight: 700;
+    margin-bottom: 10%;
+}
+
+input[type="text"],input[type="email"]{
+    width: 60%;
+    height: 10%;
+    background-color: transparent;
+    padding-left: 10px;
+    border: 0;
+    border-bottom: 1px solid rgb(35, 35, 152);
+    color: white;
+    outline: none;
+    margin-bottom: 15px;
+    font-size: small;
+}
+textarea{
+    width: 60%;
+    
+    background-color: transparent;
+    padding-left: 10px;
+    border: 0;
+    border-bottom: 1px solid rgb(35, 35, 152);
+    color: white;
+    outline: none;
+    margin-bottom: 15px;
+    font-size: small;
+}
+input::placeholder,textarea::placeholder{
+    color: wheat;
+    font-size: small;
+}
+.sendbutton {
+    background: #7a00ff; 
+    color: #fff; 
+    /* box-shadow: 0 0 10px #7a00ff, 0 0 30px #7a00ff;  */
+    font-size: small;
+}
+.line{
+    margin-top: 8%;
+}
+.footer{
+    padding: 10px;
+    text-align: center;
+    
+}
+.footer h1{
+    font-family: "Rubik Vinyl", serif;
+    color: white;
+}
+.footer h6{
+    color: rgb(145, 142, 142);
+    font-size: small;
+    margin-top: 20px;
+}
+.footer .logos{
+    margin-top: 10px;
+}
+.footer .logos i{
+    color: white;
+    background-color: rgb(31, 30, 30);
+    padding: 8px;
+    border-radius: 50%;
+    margin: 10px;
+}
